@@ -78,7 +78,9 @@ public class ExpressionUtils {
                 tmp.setNodeMetaData("statementLabel", stmt.getStatementLabel());
             }
 
-            booleanExpressions.add(tmp);
+            if (tmp != null) {
+                booleanExpressions.add(tmp);
+            }
         }
 
         return booleanExpressions;
